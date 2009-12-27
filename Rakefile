@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "ja_util"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{自分用日本語処理ライブラリ}
+    gem.description = %Q{自分用日本語処理ライブラリ}
     gem.email = "tily05@gmail.com"
     gem.homepage = "http://github.com/tily/ja_util"
     gem.authors = ["tily"]
