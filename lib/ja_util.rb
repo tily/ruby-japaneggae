@@ -1,6 +1,7 @@
 $:.unshift(File.dirname(__FILE__)) unless
 $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
 
+require 'ja_util/featured'
 require 'ja_util/mecabable'
 require 'ja_util/conjugatable'
 require 'ja_util/hatenable'
@@ -9,6 +10,7 @@ module Japanese
 
     REGEXP = /[一-龠]|[ぁ-ん]|[ァ-ヴー]/u
 
+    include Featured
     include Mecabable
     include Conjugatable
     include Hatenable
