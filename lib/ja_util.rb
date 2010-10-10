@@ -23,9 +23,7 @@ module Kernel
     def Japanese(str)
         raise ArgumentError, 'Not String object' if !str.is_a? String
         raise ArgumentError, 'Not Japanese' if !str.match(Japanese::REGEXP)
-        class << str
-            include Japanese
-        end
+        str.extend(Japanese)
         str
     end
 
