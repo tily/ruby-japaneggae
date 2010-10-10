@@ -24,6 +24,7 @@ module Kernel
         raise ArgumentError, 'Not String object' if !str.is_a? String
         raise ArgumentError, 'Not Japanese' if !str.match(Japanese::REGEXP)
         str.extend(Japanese)
+        yield str if block_given?
         str
     end
 

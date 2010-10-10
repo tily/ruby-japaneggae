@@ -59,5 +59,15 @@ describe 'Japanese()' do
 
     end
 
+    describe 'Takes block' do
+        it 'takes block' do        
+            jstr = 'これも日本語です'
+            Japanese(jstr) do |str|
+                str.is_a?(String).should be_true
+                str.should == jstr
+            end
+        end
+    end
+
 end
 
