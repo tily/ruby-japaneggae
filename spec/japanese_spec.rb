@@ -26,12 +26,10 @@ describe 'Japanese()' do
             @jstr = Japanese('これは日本語です')
         end
 
-        it '#japanese? returns true' do
-            @jstr.japanese?.should be_true
-        end
-
-        it '#ja? returns true' do
-            @jstr.ja?.should be_true
+        [:japanese?, :ja?].each do |message|
+            it "##{message} returns true" do
+                @jstr.send(message).should be_true
+            end
         end
 
         it 'has singleton methods' do
@@ -49,12 +47,10 @@ describe 'Japanese()' do
             @str = 'This is just a string'
         end
 
-        it 'String object does not respond to japanese?' do
-            @str.respond_to?(:japanese?).should be_false
-        end
-
-        it 'String object does not respond to ja?' do
-            @str.respond_to?(:ja?).should be_false
+        [:japanese?, :ja?].each do |message|
+            it "String object does not respond to #{message}" do
+                @str.respond_to?(:message).should be_false
+            end
         end
 
         it 'String object does not have any singleton method' do
