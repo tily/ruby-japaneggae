@@ -43,5 +43,25 @@ describe 'Japanese()' do
 
     end
 
+    describe 'global String class is not polluted' do
+
+        before do
+            @str = 'This is just a string'
+        end
+
+        it 'String object does not respond to japanese?' do
+            @str.respond_to?(:japanese?).should be_false
+        end
+
+        it 'String object does not respond to ja?' do
+            @str.respond_to?(:ja?).should be_false
+        end
+
+        it 'String object does not have any singleton method' do
+            @str.singleton_methods.should be_empty 
+        end
+
+    end
+
 end
 
