@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe 'Japanese' do
+describe 'Japanese()' do
 
     describe 'Argument errors' do
 
