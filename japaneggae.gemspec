@@ -4,41 +4,43 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{ja_util}
+  s.name = %q{japaneggae}
   s.version = "0.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["tily"]
-  s.date = %q{2010-10-10}
+  s.date = %q{2010-10-11}
   s.description = %q{自分用日本語処理ライブラリ}
   s.email = %q{tily05@gmail.com}
   s.extra_rdoc_files = [
-    "LICENSE",
-     "README.rdoc"
+    "LICENSE"
   ]
   s.files = [
     ".document",
      ".gitignore",
      "LICENSE",
-     "README.rdoc",
      "Rakefile",
      "VERSION",
-     "ja_util.gemspec",
-     "lib/ja_util.rb",
-     "lib/ja_util/conjugatable.rb",
-     "lib/ja_util/hatenable.rb",
-     "lib/ja_util/mecabable.rb",
+     "lib/japaneggae.rb",
+     "lib/japaneggae/conjugatable.rb",
+     "lib/japaneggae/featured.rb",
+     "lib/japaneggae/hatenable.rb",
+     "lib/japaneggae/mecabable.rb",
+     "spec/featured_spec.rb",
      "spec/japanese_spec.rb",
+     "spec/mecabable_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/tily/ja_util}
+  s.homepage = %q{http://github.com/tily/ruby-japaneggae}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{自分用日本語処理ライブラリ}
   s.test_files = [
-    "spec/japanese_spec.rb",
+    "spec/mecabable_spec.rb",
+     "spec/featured_spec.rb",
+     "spec/japanese_spec.rb",
      "spec/spec_helper.rb"
   ]
 

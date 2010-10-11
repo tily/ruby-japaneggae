@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "ja_util"
+    gem.name = "japaneggae"
     gem.summary = %Q{自分用日本語処理ライブラリ}
     gem.description = %Q{自分用日本語処理ライブラリ}
     gem.email = "tily05@gmail.com"
-    gem.homepage = "http://github.com/tily/ja_util"
+    gem.homepage = "http://github.com/tily/ruby-japaneggae"
     gem.authors = ["tily"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
@@ -39,7 +39,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "ja_util #{version}"
+  rdoc.title = "japaneggae #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

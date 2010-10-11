@@ -1,10 +1,10 @@
 $:.unshift(File.dirname(__FILE__)) unless
 $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
 
-require 'ja_util/featured'
-require 'ja_util/mecabable'
-require 'ja_util/conjugatable'
-require 'ja_util/hatenable'
+require 'japaneggae/featured'
+require 'japaneggae/mecabable'
+require 'japaneggae/conjugatable'
+require 'japaneggae/hatenable'
 
 module Japanese
 
