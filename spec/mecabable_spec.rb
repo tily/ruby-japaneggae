@@ -1,10 +1,10 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe Japanese::Mecabable do
+describe Japaneggae::Mecabable do
 
     before do
         @str = '犬は水を恐れる'
-        @str.extend(Japanese::Mecabable)
+        @str.extend(Japaneggae::Mecabable)
     end
 
     describe 'parsing methods' do

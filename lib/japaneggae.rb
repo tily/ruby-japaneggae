@@ -6,7 +6,7 @@ require 'japaneggae/mecabable'
 require 'japaneggae/conjugatable'
 require 'japaneggae/hatenable'
 
-module Japanese
+module Japaneggae
 
     REGEXP = /[一-龠]|[ぁ-ん]|[ァ-ヴー]/u
 
@@ -24,8 +24,8 @@ module Kernel
 
     def Japanese(str)
         raise ArgumentError, 'Not String object' if !str.is_a? String
-        raise ArgumentError, 'Not Japanese' if !str.match(Japanese::REGEXP)
-        str.extend(Japanese)
+        raise ArgumentError, 'Not Japanese' if !str.match(Japaneggae::REGEXP)
+        str.extend(Japaneggae)
         yield str if block_given?
         str
     end

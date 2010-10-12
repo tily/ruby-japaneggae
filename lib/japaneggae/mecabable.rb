@@ -1,6 +1,6 @@
 require 'MeCab'
 
-module Japanese
+module Japaneggae
 
     module Mecabable
 

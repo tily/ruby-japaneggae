@@ -1,5 +1,5 @@
 
-module Japanese
+module Japaneggae
 
     module Featured
 

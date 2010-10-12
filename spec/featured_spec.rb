@@ -1,12 +1,12 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe Japanese::Featured do
+describe Japaneggae::Featured do
 
     before do
         @feature = '名詞,一般,*,*,*,*,犬,イヌ,イヌ'
 
         @str = '犬は水を恐れる'
-        @str.extend(Japanese::Featured)
+        @str.extend(Japaneggae::Featured)
         @str.feature = @feature
     end
 
@@ -33,7 +33,7 @@ describe Japanese::Featured do
         @str.feature.should == @feature
     end
 
-    Japanese::Featured::FIELDS.each_with_index do |field, i|
+    Japaneggae::Featured::FIELDS.each_with_index do |field, i|
 
         it "##{field} returns value" do
             expect = @feature.split(',')[i]
