@@ -3,11 +3,11 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe Japanese::Featured do
 
     before do
-      @feature = '名詞,一般,*,*,*,*,犬,イヌ,イヌ'
+        @feature = '名詞,一般,*,*,*,*,犬,イヌ,イヌ'
 
-      @str = '犬は水を恐れる'
-      @str.extend(Japanese::Featured)
-      @str.feature = @feature
+        @str = '犬は水を恐れる'
+        @str.extend(Japanese::Featured)
+        @str.feature = @feature
     end
 
     describe '#featured?' do
